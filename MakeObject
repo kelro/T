@@ -1,0 +1,19 @@
+[
+    {
+        "id": "c2e48d00.7f227",
+        "type": "json",
+        "z": "1493a6e.ffb30d9",
+        "name": "MakeObject",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 110,
+        "y": 140,
+        "wires": [
+            [
+                "ab6bc8af.d57a98"
+            ]
+        ],
+        "info": "{\"model\" : \"Acurite-Tower\", \"id\" : 5643, \"channel\" : \"A\", \"battery_ok\" : 1, \"temperature_C\" : 24.600, \"humidity\" : 59, \"mic\" : \"CHECKSUM\"}"
+    }
+]

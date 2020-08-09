@@ -1,0 +1,50 @@
+[
+    {
+        "id": "ab6bc8af.d57a98",
+        "type": "switch",
+        "z": "1493a6e.ffb30d9",
+        "name": "Switch Payloads based on model",
+        "property": "payload.model",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "DSC-Security",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "-Remote",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Smoke-GS558",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 180,
+        "y": 220,
+        "wires": [
+            [
+                "8066d104.ae97d"
+            ],
+            [
+                "14da2146.4229ef"
+            ],
+            [
+                "12db7ae6.63eded"
+            ],
+            [
+                "38806a39.eeb5a6"
+            ]
+        ],
+        "info": "**Coming from neighbor**\n{\"model\":\"DSC-Security\",\"subtype\":\"unknown\",\"id\":4984530,\"closed\":1,\"event\":0,\"tamper\":0,\"battery_ok\":1,\"xactivity\":0,\"xtamper1\":0,\"xtamper2\":0,\"exception\":0,\"esn\":\"4c0ed2\",\"status\":195,\"status_hex\":\"c3\",\"mic\":\"CRC\"}\n\nMotion Sensor\n{\"model\":\"Generic-Remote\",\"id\":4176,\"cmd\":85,\"tristate\":\"0Z00ZZ00ZZZZ\"}\n\nAttic\n{\"model\":\"LaCrosse-TX141Bv2\",\"id\":154,\"channel\":1,\"temperature_C\":25.3,\"battery_ok\":1,\"test\":\"No\"}\n\nYard\n{\"model\" : \"Acurite-606TX\", \"id\" : 106, \"battery_ok\" : 1, \"temperature_C\" : 25.800, \"mic\" : \"CHECKSUM\"}\n\nPatio\n{\"model\":\"Acurite-Tower\",\"id\":5643,\"channel\":\"C\",\"battery_ok\":1,\"temperature_C\":25.2,\"humidity\":80,\"mic\":\"CHECKSUM\"}\n\nBathroom\n\"model\" : \"Acurite-Tower\", \"id\" : 12902, \"channel\" : \"B\", battery_ok\" : 1, \"temperature_C\" : 25.700, \"humidity\" : 55, \"mic\" : \"CHECKSUM\"}\n\nUpstairs\n\"model\" : \"Acurite-Tower\", \"id\" : 12872, \"channel\" : \"A\", battery_ok\" : 1, \"temperature_C\" : 25.700, \"humidity\" : 55, \"mic\" : \"CHECKSUM\"}\n\n\n\n{\"model\":\"Acurite-606TX\",\"id\":106,\"battery_ok\":1,\"temperature_C\":24.9,\"mic\":\"CHECKSUM\"}\n\nCPVan Water Detector \nWater heater above master bedroom closet\nUses lithium battery CR2450\n{\"model\" : \"Generic-Remote\", \"id\" : 44012, \"cmd\" : 12, \"tristate\" : \"XXX11X100010\"}\n\nCPVan Water Detector \nUpstairs attic, air conditioner #1 water pan\nUses lithium battery CR2450\n{\"model\" : \"Generic-Remote\", \"id\" : 3308, \"cmd\" : 12, \"tristate\" : \"00101X100010\"}\n\nCPVan Water Detector \nUpstairs attic, water heater pan\nUses lithium battery CR2450\n{\"model\" : \"Generic-Remote\", \"id\" : 64748, \"cmd\" : 12, \"tristate\" : \"11101X100010\"}\n\nCPVan Water Detector \nUpstairs attic, air conditioner #2 water pan\nUses lithium battery CR2450\n{\"model\" : \"Generic-Remote\", \"id\" : 59676, \"cmd\" : 12, \"tristate\" : \"1XXZ0Z100010\"}\n\nVersa Door/Windows Contact\nhttp://versawirless.com/pages/installation\nuses lithium battery CR2030\nClosed switch \n{\"model\" : \"DSC-Security\", \"subtype\" : \"DW4917 door/window sensor\", \"id\" : 2708817, \"closed\" : 1, \"event\" : 1, \"tamper\" : 0, \"battery_ok\" : 1, \"xactivity\" : 1, \"xtamper1\" : 0, \"xtamper2\" : 0, \"exception\" : 0, \"esn\" : \"295551\", \"status\" : 163, \"status_hex\" : \"a3\", \"mic\" : \"CRC\"}\n\nOpen switch\n{\"model\" : \"DSC-Security\", \"subtype\" : \"DW4917 door/window sensor\", \"id\" : 2708817, \"closed\" : 0, \"event\" : 1, \"tamper\" : 0, \"battery_ok\" : 1, \"xactivity\" : 1, \"xtamper1\" : 0, \"xtamper2\" : 0, \"exception\" : 0, \"esn\" : \"295551\", \"status\" : 161, \"status_hex\" : \"a1\", \"mic\" : \"CRC\"}\n"
+    }
+]

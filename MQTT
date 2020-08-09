@@ -1,0 +1,41 @@
+[
+    {
+        "id": "cfa319b8.1018c8",
+        "type": "mqtt in",
+        "z": "1493a6e.ffb30d9",
+        "name": "MQTT",
+        "topic": "home/acurite",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "84dbf0c0.eb442",
+        "x": 90,
+        "y": 80,
+        "wires": [
+            [
+                "c2e48d00.7f227"
+            ]
+        ]
+    },
+    {
+        "id": "84dbf0c0.eb442",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    }
+]
