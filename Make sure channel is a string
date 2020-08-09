@@ -1,0 +1,18 @@
+[
+    {
+        "id": "38806a39.eeb5a6",
+        "type": "function",
+        "z": "1493a6e.ffb30d9",
+        "name": "Make sure channel is a string",
+        "func": "var n = msg.payload.channel;\nn = n + \"\";\nmsg.payload.channel = n;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 300,
+        "y": 300,
+        "wires": [
+            [
+                "7862d84c.a4b2e8"
+            ]
+        ]
+    }
+]

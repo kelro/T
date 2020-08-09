@@ -1,0 +1,27 @@
+[
+    {
+        "id": "d7552b98.45db48",
+        "type": "influxdb out",
+        "z": "1493a6e.ffb30d9",
+        "influxdb": "cf3b58a7.763738",
+        "name": "WriteToTemperature (Channel 4)",
+        "measurement": "temperature_C",
+        "precision": "",
+        "retentionPolicy": "",
+        "x": 1050,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "cf3b58a7.763738",
+        "type": "influxdb",
+        "z": "",
+        "hostname": "127.0.0.1",
+        "port": "8086",
+        "protocol": "http",
+        "database": "temperature",
+        "name": "temperature",
+        "usetls": false,
+        "tls": ""
+    }
+]

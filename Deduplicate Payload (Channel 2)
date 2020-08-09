@@ -1,19 +1,19 @@
 [
     {
-        "id": "8066d104.ae97d",
+        "id": "14da2146.4229ef",
         "type": "deduplicate",
         "z": "1493a6e.ffb30d9",
-        "name": "Deduplicate Payload",
+        "name": "Deduplicate Payload (Channel 2)",
         "keyproperty": "",
         "expirypolicy": "keep",
         "registryclass": "",
         "noderole": "standalone",
         "expiry": "5",
-        "x": 580,
-        "y": 120,
+        "x": 620,
+        "y": 160,
         "wires": [
             [
-                "e438044e.bd2758"
+                "6cc25ff9.84b"
             ],
             []
         ]

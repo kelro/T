@@ -1,0 +1,27 @@
+[
+    {
+        "id": "6cc25ff9.84b",
+        "type": "influxdb out",
+        "z": "1493a6e.ffb30d9",
+        "influxdb": "941eddc.efe0e2",
+        "name": "WriteToSecurity (Channel 2)",
+        "measurement": "status",
+        "precision": "",
+        "retentionPolicy": "",
+        "x": 1060,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "941eddc.efe0e2",
+        "type": "influxdb",
+        "z": "",
+        "hostname": "127.0.0.1",
+        "port": "8086",
+        "protocol": "http",
+        "database": "security",
+        "name": "security",
+        "usetls": false,
+        "tls": ""
+    }
+]
